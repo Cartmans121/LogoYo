@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Yo</title>
+    
+    <link rel="shrocut icon" href="./img/short-icon.svg">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__row">
+                <a class="logo" href="#">
+                    <img src="./img/logo.png" alt="logo" class="logo__img">
+                </a>
+                <nav class="menu mobile-nav">
+                    <ul class="menu__list mobile-nav__list menu--active">
+                        <li class="menu__item"><a class="menu__item-link" href="#">Автомобили</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#">Покупка авто</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#">Личная охрана</a></li>
+                        <li class="menu__item menu__item--active"><a class="menu__item-link" href="#">Клубные карты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__menu-socials">
+                    <div class="header__menu-telegram">
+                        <a class="header__menu-link telegram-link" href="#">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20 3.33325C10.8 3.33325 3.33334 10.7999 3.33334 19.9999C3.33334 29.1999 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.1999 36.6667 19.9999C36.6667 10.7999 29.2 3.33325 20 3.33325ZM27.7333 14.6666C27.4833 17.2999 26.4 23.6999 25.85 26.6499C25.6167 27.8999 25.15 28.3166 24.7167 28.3666C23.75 28.4499 23.0167 27.7333 22.0833 27.1166C20.6167 26.1499 19.7833 25.5499 18.3667 24.6166C16.7167 23.5333 17.7833 22.9333 18.7333 21.9666C18.9833 21.7166 23.25 17.8333 23.3333 17.4833C23.3449 17.4302 23.3434 17.3752 23.3289 17.3229C23.3143 17.2706 23.2873 17.2227 23.25 17.1833C23.15 17.0999 23.0167 17.1333 22.9 17.1499C22.75 17.1833 20.4167 18.7333 15.8667 21.7999C15.2 22.2499 14.6 22.4833 14.0667 22.4666C13.4667 22.4499 12.3333 22.1333 11.4833 21.8499C10.4333 21.5166 9.61668 21.3333 9.68334 20.7499C9.71668 20.4499 10.1333 20.1499 10.9167 19.8333C15.7833 17.7166 19.0167 16.3166 20.6333 15.6499C25.2667 13.7166 26.2167 13.3833 26.85 13.3833C26.9833 13.3833 27.3 13.4166 27.5 13.5833C27.6667 13.7166 27.7167 13.8999 27.7333 14.0333C27.7167 14.1333 27.75 14.4333 27.7333 14.6666Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header__menu-instagram">
+                        <a class="header__menu-link instagram-link" href="#">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13 3.33325H27C32.3333 3.33325 36.6667 7.66659 36.6667 12.9999V26.9999C36.6667 29.5637 35.6482 32.0224 33.8354 33.8353C32.0225 35.6481 29.5638 36.6666 27 36.6666H13C7.66668 36.6666 3.33334 32.3333 3.33334 26.9999V12.9999C3.33334 10.4362 4.35179 7.9774 6.16464 6.16455C7.9775 4.3517 10.4363 3.33325 13 3.33325ZM12.6667 6.66659C11.0754 6.66659 9.54925 7.29873 8.42404 8.42394C7.29882 9.54916 6.66668 11.0753 6.66668 12.6666V27.3333C6.66668 30.6499 9.35001 33.3333 12.6667 33.3333H27.3333C28.9246 33.3333 30.4508 32.7011 31.576 31.5759C32.7012 30.4507 33.3333 28.9245 33.3333 27.3333V12.6666C33.3333 9.34992 30.65 6.66659 27.3333 6.66659H12.6667ZM28.75 9.16658C29.3025 9.16658 29.8324 9.38608 30.2232 9.77678C30.6139 10.1675 30.8333 10.6974 30.8333 11.2499C30.8333 11.8025 30.6139 12.3324 30.2232 12.7231C29.8324 13.1138 29.3025 13.3333 28.75 13.3333C28.1975 13.3333 27.6676 13.1138 27.2769 12.7231C26.8862 12.3324 26.6667 11.8025 26.6667 11.2499C26.6667 10.6974 26.8862 10.1675 27.2769 9.77678C27.6676 9.38608 28.1975 9.16658 28.75 9.16658ZM20 11.6666C22.2101 11.6666 24.3298 12.5446 25.8926 14.1074C27.4554 15.6702 28.3333 17.7898 28.3333 19.9999C28.3333 22.2101 27.4554 24.3297 25.8926 25.8925C24.3298 27.4553 22.2101 28.3333 20 28.3333C17.7899 28.3333 15.6703 27.4553 14.1075 25.8925C12.5447 24.3297 11.6667 22.2101 11.6667 19.9999C11.6667 17.7898 12.5447 15.6702 14.1075 14.1074C15.6703 12.5446 17.7899 11.6666 20 11.6666ZM20 14.9999C18.6739 14.9999 17.4022 15.5267 16.4645 16.4644C15.5268 17.4021 15 18.6738 15 19.9999C15 21.326 15.5268 22.5978 16.4645 23.5355C17.4022 24.4731 18.6739 24.9999 20 24.9999C21.3261 24.9999 22.5979 24.4731 23.5355 23.5355C24.4732 22.5978 25 21.326 25 19.9999C25 18.6738 24.4732 17.4021 23.5355 16.4644C22.5979 15.5267 21.3261 14.9999 20 14.9999Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <button class="header__btn header__modal">Связаться с нами</button>
+                <button class="hamburger hamburger--spring" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="advantages">
+            <div class="container">
+                <div class="advantages__content">
+                    <div class="advantages__item" data-aos="fade-right">
+                        <div class="advantages__item-box">
+                            <h1 class="advantages__title">Стань частью <br> клуба Logo yo</h1>
+                            <p class="advantages__text">Узнайте о преимуществах наших Клубных карт для аренды авто.
+                                Эксклюзивные предложения, бесплатные дни и многое другое ждут вас. Присоединяйтесь к
+                                клубу
+                                уже сегодня!</p>
+                        </div>
+                        <div class="advantages__btn-block">
+                            <button onclick="scrollToElement('cards')" class="advantages__btn btn">
+                                Выбрать карту
+                            </button>
+                        </div>
+                    </div>
+                    <div class="advantages__cards" data-aos="fade-left">
+                        <div class="advantages__card">
+                            <img src="./img/cards-header/card-premium.png" alt="premium"
+                                class="advantages__card-img advantages__card-img-premium">
+                            <img src="./img/cards-header/card-gold.png" alt="gold"
+                                class="advantages__card-img advantages__card-img-gold">
+                            <img src="./img/cards-header/card-silver.png" alt="silver"
+                                class="advantages__card-img advantages__card-img-silver">
+                            <img src="./img/cards-header/card-standart.png" alt="standart"
+                                class="advantages__card-img advantages__card-img-standart">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="conditions">
+            <div class="container">
+                <h2 class="conditions__title title">Персональные условия по тарифам только для владельцев клубной карты
+                </h2>
+                <div class="conditions__items" data-aos="fade-up">
+                    <div class="conditions__item">
+                        <div class="conditions__item-title">Rolls-Royce Wraith</div>
+                        <img src="./img/rolss-royce.png" alt="rolls-royce" class="conditions__img">
+                        <del>79.000 руб/сутки</del>
+                        <nav class="conditions__price">49.000 руб/сутки</nav>
+                    </div>
+                    <div class="conditions__item">
+                        <div class="conditions__item-title">Mercedes - Benz G</div>
+                        <img src="./img/mercedes-b.png" alt="rolls-royce" class="conditions__img">
+                        <del>54.000 руб/сутки</del>
+                        <nav class="conditions__price">29.000 руб/сутки</nav>
+                    </div>
+                    <div class="conditions__item">
+                        <div class="conditions__item-title">Dodge Challenger SRT</div>
+                        <img src="./img/dodje-chal.png" alt="rolls-royce" class="conditions__img">
+                        <del>20.000 руб/сутки</del>
+                        <nav class="conditions__price">11.900 руб/сутки</nav>
+                    </div>
+                    <div class="conditions__item-circle">
+                        <p class="conditions__item-text conditions__item-text-num">20+</p>
+                        <p class="conditions__item-text conditions__item-text-descr">автомобилей в аренду со скидкой до
+                            40%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cards" class="cards">
+            <div class="container">
+                <h2 class="title cards__title">Выберите подходящую карту</h2>
+                <p class="cards__text">Выберите идеальную карту, соответствующую вашим потребностям. <br> Получите
+                    эксклюзивные привилегии и выгоды при аренде автомобиля. Наслаждайтесь комфортом и удобством с нашими
+                    клубными картами.</p>
+                <div class="cards__content" data-aos="fade-down">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-item">
+                                    <div class="swiper-cards swiper-cards-premium">
+                                        <div class="swiper-cards-box">
+                                            <a href="#" class="swiper-cards-link">
+                                                <img src="./img/logo.png" alt="logo" class="swiper-cards-img">
+                                            </a>
+                                            <h4 class="swiper-cards__title">Premium</h4>
+                                        </div>
+                                        <p class="swiper-cards-name">Efrosin Tarasov</p>
+                                    </div>
+                                    <div class="rotate-slide">
+                                        <div class="rotate-slide-deposites">
+                                            <div class="deposite">
+                                                <div class="deposite-item">
+                                                    <div class="deposite-text">Размер депозита</div>
+                                                    <nav class="deposite-amount deposite-num">2 000 000 руб.</nav>
+                                                </div>
+                                                <div class="deposite-item">
+                                                    <div class="deposite-text">Размер депозита</div>
+                                                    <nav class="deposite-percent deposite-num">40%</nav>
+                                                </div>
+                                                <div class="deposite-item">
+                                                    <div class="deposite-text">Срок действия</div>
+                                                    <nav class="deposite-validity-per deposite-num">Без срока</nav>
+                                                </div>
+                                            </div>
+                                            <div class="deposite-card deposite-card-premium">
+                                                <a class="deposite-logo-link" href="#" class="logo">
+                                                    <img src="./img/logo.png" alt="logo">
+                                                </a>
+                                                <button class="cards__btn">Оформить Карту</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-item">
+                                    <div class="swiper-cards swiper-cards-standart">
+                                        <div class="swiper-cards-box">
+                                            <a href="#" class="swiper-cards-link">
+                                                <img src="./img/logo.png" alt="logo" class="swiper-cards-img">
+                                            </a>
+                                            <h4 class="swiper-cards__title">Standard</h4>
+                                        </div>
+                                        <p class="swiper-cards-name">Efrosin Tarasov</p>
+                                    </div>
+                                    <div class="rotate-slide">
+                                        <div class="rotate-slide-deposites">
+                                            <div class="deposite">
+                                                <div class="deposite-item">
+                                                    <div class="deposite-text">Размер депозита</div>
+                                                    <nav class="deposite-amount deposite-num">2 000 000 руб.</nav>
+                                                </div>
+                                                <div class="deposite-item">
+                                                    <div class="deposite-text">Размер депозита</div>
+                                                    <nav class="deposite-percent deposite-num">40%</nav>
+                                                </div>
+                                                <div class="deposite-item">
+                                                    <div class="deposite-text">Срок действия</div>
+                                                    <nav class="deposite-validity-per deposite-num">Без срока</nav>
+                                                </div>
+                                            </div>
+                                            <div class="deposite-card deposite-card-standard">
+                                                <a class="deposite-logo-link" href="#" class="logo">
+                                                    <img src="./img/logo.png" alt="logo">
+                                                </a>
+                                                <button class="cards__btn">Оформить Карту</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-item">
+                                    <div class="swiper-cards swiper-cards-silver">
+                                        <div class="swiper-cards-box">
+                                            <a href="#" class="swiper-cards-link">
+                                                <img src="./img/logo.png" alt="logo" class="swiper-cards-img">
+                                            </a>
+                                            <h4 class="swiper-cards__title swiper-cards__title-dark">Slver</h4>
+                                        </div>
+                                        <p class="swiper-cards-name">Efrosin Tarasov</p>
+                                    </div>
+                                    <div class="rotate-slide">
+                                        <div class="rotate-slide-deposites">
+                                            <div class="deposite">
+                                                <div class="deposite-item">
+                                                    <div class="deposite-text">Размер депозита</div>
+                                                    <nav class="deposite-amount deposite-num">1 000 000 руб.</nav>
+                                                </div>
+                                                <div class="deposite-item">
+                                                    <div class="deposite-text">Размер депозита</div>
+                                                    <nav class="deposite-percent deposite-num">20%</nav>
+                                                </div>
+                                                <div class="deposite-item">
+                                                    <div class="deposite-text">Срок действия</div>
+                                                    <nav class="deposite-validity-per deposite-num">1 Год</nav>
+                                                </div>
+                                            </div>
+                                            <div class="deposite-card deposite-card-silver">
+                                                <a class="deposite-logo-link" href="#" class="logo">
+                                                    <img src="./img/black-logo.png" alt="logo">
+                                                </a>
+                                                <button class="cards__btn">Оформить Карту</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-item">
+                                    <div class="swiper-cards swiper-cards-gold">
+                                        <div class="swiper-cards-box">
+                                            <a href="#" class="swiper-cards-link">
+                                                <img src="./img/logo.png" alt="logo" class="swiper-cards-img">
+                                            </a>
+                                            <h4 class="swiper-cards__title swiper-cards__title-dark">Gold</h4>
+                                        </div>
+                                        <p class="swiper-cards-name">Efrosin Tarasov</p>
+                                    </div>
+                                    <div class="rotate-slide">
+                                        <div class="rotate-slide-deposites">
+                                            <div class="deposite">
+                                                <div class="deposite-item">
+                                                    <div class="deposite-text">Размер депозита</div>
+                                                    <nav class="deposite-amount deposite-num">1 500 000 руб.</nav>
+                                                </div>
+                                                <div class="deposite-item">
+                                                    <div class="deposite-text">Размер депозита</div>
+                                                    <nav class="deposite-percent deposite-num">30%</nav>
+                                                </div>
+                                                <div class="deposite-item">
+                                                    <div class="deposite-text">Срок действия</div>
+                                                    <nav class="deposite-validity-per deposite-num">1 Год</nav>
+                                                </div>
+                                            </div>
+                                            <div class="deposite-card deposite-card-gold">
+                                                <a class="deposite-logo-link" href="#" class="logo">
+                                                    <img src="./img/black-logo.png" alt="logo">
+                                                </a>
+                                                <button class="cards__btn">Оформить Карту</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-arrows">
+                        <div class="swiper-arrow swiper-arrow-prev">
+                            <img src="./img/arrow-prev.png" alt="arrow-prev">
+                        </div>
+                        <div class="swiper-arrow swiper-arrow-next">
+                            <img src="./img/arrow-next.png" alt="arrow-next">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="exclusive" data-aos="fade-up">
+            <div class="container">
+                <div class="exclusive__content">
+                    <div class="item item1">Элегантный подарок на любой случай.</div>
+                    <div class="item item2">
+                        <article class="exclusive__content-descr">
+                            <h5 class="exclusive-title">На Выходные</h5>
+                            <p class="exclusive-text">Отличное дополнение для тех, кто ищет отдых.</p>
+                        </article>
+                    </div>
+                    <div class="item item3">
+                        <article class="exclusive__content-descr">
+                            <h5 class="exclusive-title">На новый год</h5>
+                            <p class="exclusive-text">Дарите незабываемые впечатления перед Новым годом.</p>
+                        </article>
+                    </div>
+                    <div class="item item4">
+                        <article class="exclusive__content-descr">
+                            <h5 class="exclusive-title">На новый год</h5>
+                            <p class="exclusive-text">Дарите незабываемые впечатления перед Новым годом.</p>
+                        </article>
+                    </div>
+                    <div class="item item5">
+                        Автомобили <br> всегда чистые и заправленные.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts__inner">
+                    <div class="contacts__lease">
+                        <div class="contacts__lease-logo">
+                            <a class="contacts__lease-logo-link" href="#" class="logo">
+                                <img src="./img/logo.png" alt="logo" class="contacts__lease-logo-img">
+                            </a>
+                        </div>
+                        <h6 class="contacts__subtitle">Аренда премиальных автомобилей в Москве</h6>
+                        <ul class="contacts__services-list">
+                            <li class="contacts__services-item">
+                                <a href="#" class="contacts__services-link">Автомобили</a>
+                            </li>
+                            <li class="contacts__services-item">
+                                <a href="#" class="contacts__services-link">Покупка авто</a>
+                            </li>
+                            <li class="contacts__services-item">
+                                <a href="#" class="contacts__services-link">Личная охрана</a>
+                            </li>
+                            <li class="contacts__services-item">
+                                <a href="#" class="contacts__services-link">Клубные карты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contacts__item">
+                        <nav class="contacts__text">Телефон</nav>
+                        <div class="contacts__boxes">
+                            <div class="contacts__box-phone">
+                                <a href="tel:70000000000" class="contacts__phone">+7 (000) 000-00-00</a>
+                                <p class="contacts__subtext">Работаем круглосуточно</p>
+                            </div>
+                            <div class="contacts__item-socials">
+                                <a class="contacts__socials contacts__socials--telegram telegram-link" href="#">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20 3.33325C10.8 3.33325 3.33334 10.7999 3.33334 19.9999C3.33334 29.1999 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.1999 36.6667 19.9999C36.6667 10.7999 29.2 3.33325 20 3.33325ZM27.7333 14.6666C27.4833 17.2999 26.4 23.6999 25.85 26.6499C25.6167 27.8999 25.15 28.3166 24.7167 28.3666C23.75 28.4499 23.0167 27.7333 22.0833 27.1166C20.6167 26.1499 19.7833 25.5499 18.3667 24.6166C16.7167 23.5333 17.7833 22.9333 18.7333 21.9666C18.9833 21.7166 23.25 17.8333 23.3333 17.4833C23.3449 17.4302 23.3434 17.3752 23.3289 17.3229C23.3143 17.2706 23.2873 17.2227 23.25 17.1833C23.15 17.0999 23.0167 17.1333 22.9 17.1499C22.75 17.1833 20.4167 18.7333 15.8667 21.7999C15.2 22.2499 14.6 22.4833 14.0667 22.4666C13.4667 22.4499 12.3333 22.1333 11.4833 21.8499C10.4333 21.5166 9.61668 21.3333 9.68334 20.7499C9.71668 20.4499 10.1333 20.1499 10.9167 19.8333C15.7833 17.7166 19.0167 16.3166 20.6333 15.6499C25.2667 13.7166 26.2167 13.3833 26.85 13.3833C26.9833 13.3833 27.3 13.4166 27.5 13.5833C27.6667 13.7166 27.7167 13.8999 27.7333 14.0333C27.7167 14.1333 27.75 14.4333 27.7333 14.6666Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                                <a class=" contacts__socials contacts__socials--instagram instagram-link" href="#">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13 3.33325H27C32.3333 3.33325 36.6667 7.66659 36.6667 12.9999V26.9999C36.6667 29.5637 35.6482 32.0224 33.8354 33.8353C32.0225 35.6481 29.5638 36.6666 27 36.6666H13C7.66668 36.6666 3.33334 32.3333 3.33334 26.9999V12.9999C3.33334 10.4362 4.35179 7.9774 6.16464 6.16455C7.9775 4.3517 10.4363 3.33325 13 3.33325ZM12.6667 6.66659C11.0754 6.66659 9.54925 7.29873 8.42404 8.42394C7.29882 9.54916 6.66668 11.0753 6.66668 12.6666V27.3333C6.66668 30.6499 9.35001 33.3333 12.6667 33.3333H27.3333C28.9246 33.3333 30.4508 32.7011 31.576 31.5759C32.7012 30.4507 33.3333 28.9245 33.3333 27.3333V12.6666C33.3333 9.34992 30.65 6.66659 27.3333 6.66659H12.6667ZM28.75 9.16658C29.3025 9.16658 29.8324 9.38608 30.2232 9.77678C30.6139 10.1675 30.8333 10.6974 30.8333 11.2499C30.8333 11.8025 30.6139 12.3324 30.2232 12.7231C29.8324 13.1138 29.3025 13.3333 28.75 13.3333C28.1975 13.3333 27.6676 13.1138 27.2769 12.7231C26.8862 12.3324 26.6667 11.8025 26.6667 11.2499C26.6667 10.6974 26.8862 10.1675 27.2769 9.77678C27.6676 9.38608 28.1975 9.16658 28.75 9.16658ZM20 11.6666C22.2101 11.6666 24.3298 12.5446 25.8926 14.1074C27.4554 15.6702 28.3333 17.7898 28.3333 19.9999C28.3333 22.2101 27.4554 24.3297 25.8926 25.8925C24.3298 27.4553 22.2101 28.3333 20 28.3333C17.7899 28.3333 15.6703 27.4553 14.1075 25.8925C12.5447 24.3297 11.6667 22.2101 11.6667 19.9999C11.6667 17.7898 12.5447 15.6702 14.1075 14.1074C15.6703 12.5446 17.7899 11.6666 20 11.6666ZM20 14.9999C18.6739 14.9999 17.4022 15.5267 16.4645 16.4644C15.5268 17.4021 15 18.6738 15 19.9999C15 21.326 15.5268 22.5978 16.4645 23.5355C17.4022 24.4731 18.6739 24.9999 20 24.9999C21.3261 24.9999 22.5979 24.4731 23.5355 23.5355C24.4732 22.5978 25 21.326 25 19.9999C25 18.6738 24.4732 17.4021 23.5355 16.4644C22.5979 15.5267 21.3261 14.9999 20 14.9999Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <nav class="contacts__text">Адрес</nav>
+                        <address class="contacts__address">Москва, Проспект Вернадского 12д</address>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="follow-us">
+            <div class="container">
+                <div class="follow-us__content">
+                    <div class="follow-us-blocks">
+                        <h6 class="follow-us__title">Следите за нами</h6>
+                      <div class="follow-us-socials-blocks">
+                            <div class="follow-us-social follow-us-social--telegram">
+                                <a class="contacts__socials-link-telegram follow-us-block" href="#">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20 3.33325C10.8 3.33325 3.33334 10.7999 3.33334 19.9999C3.33334 29.1999 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.1999 36.6667 19.9999C36.6667 10.7999 29.2 3.33325 20 3.33325ZM27.7333 14.6666C27.4833 17.2999 26.4 23.6999 25.85 26.6499C25.6167 27.8999 25.15 28.3166 24.7167 28.3666C23.75 28.4499 23.0167 27.7333 22.0833 27.1166C20.6167 26.1499 19.7833 25.5499 18.3667 24.6166C16.7167 23.5333 17.7833 22.9333 18.7333 21.9666C18.9833 21.7166 23.25 17.8333 23.3333 17.4833C23.3449 17.4302 23.3434 17.3752 23.3289 17.3229C23.3143 17.2706 23.2873 17.2227 23.25 17.1833C23.15 17.0999 23.0167 17.1333 22.9 17.1499C22.75 17.1833 20.4167 18.7333 15.8667 21.7999C15.2 22.2499 14.6 22.4833 14.0667 22.4666C13.4667 22.4499 12.3333 22.1333 11.4833 21.8499C10.4333 21.5166 9.61668 21.3333 9.68334 20.7499C9.71668 20.4499 10.1333 20.1499 10.9167 19.8333C15.7833 17.7166 19.0167 16.3166 20.6333 15.6499C25.2667 13.7166 26.2167 13.3833 26.85 13.3833C26.9833 13.3833 27.3 13.4166 27.5 13.5833C27.6667 13.7166 27.7167 13.8999 27.7333 14.0333C27.7167 14.1333 27.75 14.4333 27.7333 14.6666Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="follow-us-social follow-us-social--instagram">
+                                <a class="contacts__socials-link-instagram follow-us-block" href="#">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13 3.33325H27C32.3333 3.33325 36.6667 7.66659 36.6667 12.9999V26.9999C36.6667 29.5637 35.6482 32.0224 33.8354 33.8353C32.0225 35.6481 29.5638 36.6666 27 36.6666H13C7.66668 36.6666 3.33334 32.3333 3.33334 26.9999V12.9999C3.33334 10.4362 4.35179 7.9774 6.16464 6.16455C7.9775 4.3517 10.4363 3.33325 13 3.33325ZM12.6667 6.66659C11.0754 6.66659 9.54925 7.29873 8.42404 8.42394C7.29882 9.54916 6.66668 11.0753 6.66668 12.6666V27.3333C6.66668 30.6499 9.35001 33.3333 12.6667 33.3333H27.3333C28.9246 33.3333 30.4508 32.7011 31.576 31.5759C32.7012 30.4507 33.3333 28.9245 33.3333 27.3333V12.6666C33.3333 9.34992 30.65 6.66659 27.3333 6.66659H12.6667ZM28.75 9.16658C29.3025 9.16658 29.8324 9.38608 30.2232 9.77678C30.6139 10.1675 30.8333 10.6974 30.8333 11.2499C30.8333 11.8025 30.6139 12.3324 30.2232 12.7231C29.8324 13.1138 29.3025 13.3333 28.75 13.3333C28.1975 13.3333 27.6676 13.1138 27.2769 12.7231C26.8862 12.3324 26.6667 11.8025 26.6667 11.2499C26.6667 10.6974 26.8862 10.1675 27.2769 9.77678C27.6676 9.38608 28.1975 9.16658 28.75 9.16658ZM20 11.6666C22.2101 11.6666 24.3298 12.5446 25.8926 14.1074C27.4554 15.6702 28.3333 17.7898 28.3333 19.9999C28.3333 22.2101 27.4554 24.3297 25.8926 25.8925C24.3298 27.4553 22.2101 28.3333 20 28.3333C17.7899 28.3333 15.6703 27.4553 14.1075 25.8925C12.5447 24.3297 11.6667 22.2101 11.6667 19.9999C11.6667 17.7898 12.5447 15.6702 14.1075 14.1074C15.6703 12.5446 17.7899 11.6666 20 11.6666ZM20 14.9999C18.6739 14.9999 17.4022 15.5267 16.4645 16.4644C15.5268 17.4021 15 18.6738 15 19.9999C15 21.326 15.5268 22.5978 16.4645 23.5355C17.4022 24.4731 18.6739 24.9999 20 24.9999C21.3261 24.9999 22.5979 24.4731 23.5355 23.5355C24.4732 22.5978 25 21.326 25 19.9999C25 18.6738 24.4732 17.4021 23.5355 16.4644C22.5979 15.5267 21.3261 14.9999 20 14.9999Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </div>
+                      </div class="follow-us-socials-blocks">
+                    </div>
+                    <div class="request__block">
+                        <div class="request__content">
+                            <h3 class="request__title">ОСТАЛИСЬ ВОПРОСЫ ?</h3>
+                            <div class="request__subtext">Отправьте заявку и наш эксперт свяжется с Вами в ближайшее
+                                время</div>
+                            <form class="request__form">
+                                <input type="text" name="name" class="request__input" placeholder="Ваше Имя">
+                                <input type="tel" name="phone" class="request__input" placeholder="Номер телефона">
+                            </form>
+                        </div>
+                        <button class="request__btn btn">Отправить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__items">
+                <div class="footer__logo"><a class="footer__link" href="#">
+                        <img src="./img/logo-footer.svg" alt="footer-logo" class="footer__img">
+                    </a>
+                </div>
+                <div class="footer__confidently">
+                    <a href="#" class="footer__confidently-link">Политика конфиденциальности</a>
+                </div>
+                <div class="footer__copy">
+                    <p class="footer__text">Дизайн и разработка - AA</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
